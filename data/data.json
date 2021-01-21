@@ -1,0 +1,48 @@
+{
+  "logged_in": true,
+  "name": "Admin",
+  "nav_logged_in": [
+    {
+      "link": "/books",
+      "name": "Books"
+    },
+    {
+      "link": "/authors",
+      "name": "Authors"
+    },
+    {
+      "link": "/addbook",
+      "name": "Add Book"
+    },
+    {
+      "link": "/addauthor",
+      "name": "Add Author"
+    },
+    {
+      "link": "/edit",
+      "name": "Edit"
+    },
+    {
+      "link": "/logout",
+      "name": "Log Out"
+    }
+  ],
+  "nav_logged_out": [
+    {
+      "link": "/books",
+      "name": "Books"
+    },
+    {
+      "link": "/authors",
+      "name": "Authors"
+    },
+    {
+      "link": "/login",
+      "name": "Login"
+    },
+    {
+      "link": "/register",
+      "name": "Register"
+    }
+  ]
+}

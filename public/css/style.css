@@ -1,0 +1,222 @@
+body {
+    background-color: #16161a;
+    outline: none !important;
+}
+
+.nav-link, .navbar-brand {
+    color: #fffffe !important;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbarNav {
+    float: right !important
+}
+
+hr {
+    background-color: #fffffe;
+}
+
+.h1-format {
+    color: #6243be;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+.redirect-links {
+    text-decoration: none !important;
+}
+
+.redirect-buttons {
+    float: inline-end !important;
+    /* color: #fffffe !important; */
+}
+
+.jump :hover {
+    background-color: #fffffe;
+    color: #6243be !important;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.active {
+    border-bottom: 1px solid #fffffe !important;
+    box-shadow: 0px 0px 0px 0px #16161a;
+}
+
+.link-button {
+    margin-top: 1.5rem;
+    text-decoration: none !important;
+    background-color: #6243be;
+    padding: 0.75rem;
+    border-radius: 3rem;
+    border: 2px solid #6243be;
+    color: #fffffe;
+    text-decoration: none;
+}
+
+.button-hover :hover {
+    background-color: #fffffe !important;
+    color: #6243be !important;
+    border: 2px solid #6243be;
+    font-weight: bold;
+}
+
+.vertical-center {
+    padding-top: 1rem;
+}
+
+.roundBorder {
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 100%;
+    align-items: center;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.topic-name {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.author-name {
+    background-color: #72757e;
+    color: white;
+    font-size: small;
+    width: fit-content;
+    font-weight: bold;
+    display: inline;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.readmore-line {
+    font-size: small;
+    font-family: 'Slabo 27px', serif;
+    padding-top: 0.25rem;
+    border-top: 1px solid gray;
+    /* margin-top: 1rem; */
+    display: inline-block;
+}
+
+.password-error {
+    margin-bottom: 5px;
+    text-align: center;
+    color: rgb(207, 25, 12);
+    font-size: smaller;
+}
+
+.checked {
+    color: orange;
+}
+
+.description {
+    font-family: 'Lato', sans-serif;
+    color: #5c5d61;
+}
+
+.edit-page-image {
+    padding: 1rem;
+    background-color: #fffffe;
+    border-left: 10px solid #6243be;
+    border-bottom-right-radius: 3rem;
+    border-top-right-radius: 3rem;
+    margin: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-color: #16161a;
+    background-blend-mode: difference;
+    height: 18rem;
+}
+
+.edit-page-link h1 {
+    opacity: 100%;
+    background-color: #fffffe;
+    color: #16161a;
+    font-family: 'Titillium Web', sans-serif;
+    border: 2px solid #fffffe;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+.edit-page-link {
+    text-decoration: none !important;
+}
+
+.edit-page-link :hover {
+    color: #fffffe;
+    border: 2px solid #6243be;
+    background-color: #6243be;
+}
+
+input[type=checkbox] {
+    -ms-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    padding: 10px;
+}
+
+.primary-button {
+    border-radius: 1.5rem;
+    height: 3rem;
+    align-items: center;
+    background-color: #6243be;
+    color: #fffffe;
+    border: 3px solid #6243be;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 0.5rem;
+}
+
+.secondary-button {
+    border-radius: 1.5rem;
+    height: 3rem;
+    align-items: center;
+    background-color: #fffffe;
+    color: #6243be;
+    border: 3px solid #6243be;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.primary-confirm-button {
+    border-radius: 1.5rem;
+    height: 3rem;
+    align-items: center;
+    background-color: #e72a2a;
+    color: #fffffe;
+    border: 3px solid #e72a2a;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 0.5rem;
+}
+
+.secondary-confirm-button {
+    border-radius: 1.5rem;
+    height: 3rem;
+    align-items: center;
+    background-color: #fffffe;
+    color: #e72a2a;
+    border: 3px solid #e72a2a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.line-card {
+    margin-bottom: 1rem;
+    background-color: #6243be;
+}
+
+.page-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

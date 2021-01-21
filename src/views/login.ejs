@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login - Library</title>
+    <script src="/js/jquery.js"></script>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar Starts -->
+    <nav class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #6243be; border-bottom-left-radius: 3rem;">
+        <a class="navbar-brand" href="/"
+            style="font-family: 'Poppins', sans-serif; font-weight: 200; font-size: xx-large; padding-left: 1rem;"><b
+                style="font-weight: 400;">Library</b>App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="d-flex align-items-end navbar-nav ml-lg-auto jump">
+                <%for(let i=0;i<nav.length;i++){%>
+                    <li class="nav-item">
+                        <%if(nav[i].name=='Login'){%>
+
+                            <a class="nav-link active" href="<%=nav[i].link%>">
+                                <%=nav[i].name%>
+                            </a>
+                            <%}%>
+                                <%if(nav[i].name!='Login'){%>
+                                    <a class="nav-link" href="<%=nav[i].link%>">
+                                        <%=nav[i].name%>
+                                    </a>
+                                    <%}%>
+                    </li>
+                    <%}%>
+            </ul>
+        </div>
+    </nav>
+    <!-- /Navigation Bar Ends -->
+
+
+    <div class="container-fluid" style="padding-top: 3rem;">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 vertical-center">
+                <div class="card">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 d-none d-lg-flex">
+                            <img src="./images/using laptop.jpg" alt="Login Image" width="100%">
+                        </div>
+                        <div class="col-lg-6">
+
+                            <form action="/login/check" method="POST" onsubmit="return formValidate();">
+                                <div class="text-center" style="padding: 3rem;">
+                                    <h1 style="font-family: 'Abel', sans-serif;">Welcome Back!</h1>
+                                    <p>Sign in to continue</p>
+
+                                    <input class="form-control roundBorder" type="text" id="username" name="username"
+                                        placeholder="Enter username or email" style="margin-top: 10px;">
+
+                                    <input class="form-control roundBorder" type="password" id="password"
+                                        name="password" placeholder="Password" style="margin-top: 10px;">
+
+                                    <label class="card" id="errorLabel" for="Credential Error"
+                                        style="margin-top: 10px; border: 2px solid #DC3545; padding: 10px;"
+                                        hidden="true"></label>
+
+                                    <button class="btn roundBorder"
+                                        style="margin-top: 10px; background-color: #6243be; color: #fffffe; font-family: 'Montserrat', sans-serif;"
+                                        type="submit">Login</button>
+                                    <hr>
+                                    <div class="text-center">
+                                        <a class="small redirect-links" href="/register">Don't have an account?
+                                            Register!</a>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align: center; color: #fffffe; padding: 1rem; bottom: 0; width: 100%;">
+        <h5 style="font-family: 'Poppins', sans-serif; font-weight: 200; font-size: medium;"><b
+                style="font-weight: 400;">Library</b>App © 2021</h5>
+    </footer>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
